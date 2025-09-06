@@ -1,0 +1,27 @@
+{
+  "hard_avoid": {
+    "float_m_lt": 1.0,
+    "inst_pct_gt": 40.0,
+    "insider_pct_gt": 60.0,
+    "reverse_split_days_lt": 30,
+    "cash_runway_months_ge": 12,
+    "entry_below_vwap": true,
+    "non_gapper": true
+  },
+  "prefer": {
+    "float_m_range": [2, 100],
+    "inst_pct_le": 25,
+    "insider_pct_lt": 60,
+    "cash_runway_months_range": [1, 6],
+    "reverse_split_days_ge": 30
+  },
+  "position_sizing": {
+    "float_m_breaks": [
+      { "max": 1, "size": "no_trade" },
+      { "min": 1, "max": 2, "size": "half" },
+      { "min": 2, "size": "full" }
+    ],
+    "max_shares": 2000,
+    "max_dollars": 4000
+  }
+}
