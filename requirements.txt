@@ -7,3 +7,10 @@ finvizfinance==0.14.6
 beautifulsoup4>=4.12.2
 lxml>=5.2.1
 requests>=2.32.3
+yfinance
+finvizfinance
+pandas
+numpy
+requests
+lxml
+beautifulsoup4
